@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid ;  */
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.layout {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header {
+    padding-top: 35px;
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg);
+    background-position: 0 0;
+    background-repeat: no-repat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+#start-project {
+    float: left;
+    margin-left: 16px;
+    color: #fed136 ;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    font-size: 32px;
+    line-height: 1.3;
+
+}
+.navbar {
+    float: right;
+    margin-right: 30px;
+}
+
+.navbar>li {
+    float: left;
+    margin-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar>li>a {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar>li>a:hover {
+    color: rgba(254, 209, 54, 1);
+}
+
+.welcome-text {
+    color: #fff;
+    text-align: center;
+    padding: 200px 0 200px 0;
+}
+
+.welcome-text>h2 {
+    font-size: 40px;
+    font-style: italic;
+}
+
+.welcome-text>h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    margin-top: 30px;
+    border-radius: 2px;
+    background: rgba(254, 209, 54, 1);
+    text-transform: uppercase;
+}
+
+a.btn:hover {
+    background: #fec503;
+}
+
+section {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+section>h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+section h4 {
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 75px;
+}
+
+
+#services ul,#portfolio ul {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+#services li,#portfolio li {
+    width: 23em;
+    margin-bottom: 30px;
+}
+
+section>p {
+    font-size: 16px;
+    color: #7E7E7E;
+}
+
+section li p {
+    font-size: 14px;
+    color: #7E7E7E;
+}
+
+section .avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    background: #fed136;
+}
+
+section .avatar>span {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#portfolio {
+    background: #F8F8F8;
+}
+
+#portfolio li>a {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+
+#portfolio a>img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.h-desc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+
+.h-desc>p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#portfolio h4 {
+    margin-bottom: 7px;
+}
+
+.hover-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #fed136 !important;
+}
+
+.hover-effect:hover {
+    opacity: 0.8;
+}
+
+.hover-effect>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+#about .circle {
+    height: 150px;
+    width: 150px;
+    border: 4px solid #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+#about ul {
+    position: relative;
+
+}
+
+#about li {
+    height: 150px;
+    margin-bottom: 120px;
+}
+
+#about li h4 {
+    margin-bottom: 10px;
+}
+
+
+#about li:nth-of-type(odd) .about-content {
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    width: 23em;
+    text-align: right;
+}
+
+#about li:nth-of-type(even) .about-content {
+    position: absolute;
+    left: 50%;
+    width: 23em;
+    text-align: left;
+    margin-left:111px;
+}
+
+#about>ul::before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    display: block;
+    border-left: 2px solid #f1f1f1;
+    height: 100%;
+    width: 400px;
+}
+
+#about li:last-child {
+    margin-bottom: 0;
+}
+
+#about li:last-child .circle{
+    background: #fed136;
+}
+
+#about li:last-child .circle p{
+    position: absolute;
+    font-size: 16px;
+    padding: 9px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#team {
+    background: #F8F8F8;
+}
+
+#team li {
+    float: left;
+    width: 33.33%;
+}
+
+#team h4 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#team p {
+    font-size: 14px;
+}
+
+
+#team li>.head-img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.contact-ways {
+    margin: 10px 0;
+}
+
+.contact-ways>a {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #000;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.contact-ways>a>span {
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.contact-ways>a:hover {
+    background: #fed136;
+}
+
+.team-desc {
+    margin-top: 30px;
+    display: inline-block;
+    width: 50em;
+    text-align: center;
+}
+
+
+#logo li {
+    float: left;
+    width: 25%;
+}
+
+
+#logo {
+    padding: 50px 0;
+}
+
+#contact {
+    background: #222 url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png) 0 0 no-repeat;
+}
+
+#contact h2 {
+    color: #fff;
+}
+
+#contact form a {
+    clear: both;
+    display: inline-block;
+    width: 200px;
+
+}
+
+#contact .left {
+    float: left;
+    width: 49%;
+}
+
+#contact .right {
+    float: right;
+    width: 49%;
+    height: 221px;
+}
+
+#contact form input {
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 16px;
+    outline: none;
+    border-radius: 3px;
+}
+
+#contact form input::placeholder,#contact form textarea::placeholder {
+    text-transform: uppercase;
+    color: #C3C3C3;
+}
+
+#contact form input[name='phone'] {
+    margin-bottom: 0;
+}
+
+#contact form textarea {
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 20px;
+    width: 100%;
+    height: 221px;
+    outline: none;
+    border-radius: 3px;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer>div {
+    width: 33.33%;
+    float: left;
+    margin: 15px 0;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.policy a {
+    color: #fed136;
+    font-size: 14px;
+}
+
+
+.policy a:hover {
+    text-decoration: underline;
+}
+
+
